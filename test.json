@@ -1,0 +1,35 @@
+{
+
+	"name":"game_1",
+
+	"type":"tag",
+
+	"tag_id":1000,
+
+	"calc_sub":0,
+
+	"tag_type":2,
+
+	"tags":[1,2,3,4],
+	"show":true,
+	"info":
+		{
+			"starttime":1024,
+			"endtime":2048,
+			"desc":["fucku","abc","123"]
+			
+		},
+
+	"subs":
+		
+	[{"tag_id":1001,"name":"aaaa","icon":"1111","jump_url":"abc"},
+
+	{"tag_id":1002,"name":"bbbb","icon":"2222","jump_url":"abc"},
+	{"tag_id":1003,"name":"cccc","icon":"3333","jump_url":"abc"},
+	{"tag_id":1004,"name":"dddd","icon":"4444","jump_url":"abc"},
+	
+	{"tag_id":1005,"name":"eeee","icon":"5555","jump_url":"abc"},
+	
+	{"tag_id":1006,"name":"ffff","icon":"6666","jump_url":"abc"}]
+
+}
