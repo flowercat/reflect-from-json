@@ -200,7 +200,6 @@ namespace reflect11
 			(c->*(this->mem_)) = default_value_;
 			return true;
 		}
-		bool set_field(const json11::Json& root, void* p) { return false; }
 		T default_value_;
 	};
 	
@@ -363,7 +362,7 @@ namespace reflect11
 				assert(it != member_addr_.end());
 	
 				const auto& kv = *it;				
-				if (kv.second->has_default()) continue;
+				//if (kv.second->has_default()) continue;
 	
 				ss << pad_tab(depth + 1) << "\"" << kv.first << "\":";
 				std::string value_content;

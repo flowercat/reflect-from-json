@@ -11,12 +11,13 @@ struct sctag : reflect11::object_ptr<sctag>
 	std::string name;
 	std::string icon;
 	std::string jump_url;
-	
+	int is_default;	
 	REFLECT_BEGIN()
 		DECLARE_REFLECT(sctag, tag_id);
 		DECLARE_REFLECT(sctag, name);
 		DECLARE_REFLECT(sctag, icon);
 		DECLARE_REFLECT(sctag, jump_url);
+		DECLARE_REFLECT_DEFAULT(sctag, is_default, 0);
 	REFLECT_END()
 };
 
