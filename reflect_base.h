@@ -114,7 +114,10 @@ namespace reflect11
 	{
 		if (!is_type(bin, offset, VT_BOOL))
 			return false;
+
 		bool* p = (bool*)get_bin(bin, offset, sizeof(bool));
+		if (p == nullptr) return false;
+
 		value = *p;
 		return true;
 	}
@@ -134,6 +137,8 @@ namespace reflect11
 			return false;
 
 		const char* p = get_bin(bin, offset, len);
+		if (p == nullptr) return false;
+
 		value.assign(p, len);
 		return true;
 	}
